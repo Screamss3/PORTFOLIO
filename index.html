@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <style>
+    /* Reset */
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family: 'Poppins', sans-serif; color:#333; line-height:1.6;}
+
+    /* Navbar */
+    header {
+      background:#111; color:#fff;
+      position:fixed; top:0; left:0; width:100%;
+      padding:1rem 2rem; z-index:1000;
+      display:flex; justify-content:space-between; align-items:center;
+    }
+    .logo {font-size:1.5rem; color:#00bcd4; font-weight:700;}
+    nav ul {list-style:none; display:flex;}
+    nav li {margin-left:1.5rem;}
+    nav a {color:#fff; text-decoration:none; transition:0.3s;}
+    nav a:hover {color:#00bcd4;}
+
+    /* Hero */
+    .hero {
+      background:url("https://picsum.photos/1920/1080?blur") center/cover no-repeat;
+      height:100vh; display:flex; flex-direction:column;
+      justify-content:center; align-items:center; text-align:center;
+      color:#fff; padding:0 1rem;
+    }
+    .hero h1 {font-size:3rem;}
+    .hero span {color:#00bcd4;}
+    .hero p {margin:1rem 0; font-size:1.2rem;}
+    .btn {
+      display:inline-block; margin-top:1rem;
+      padding:0.7rem 1.5rem; background:#00bcd4; color:#fff;
+      border-radius:5px; text-decoration:none; transition:0.3s;
+    }
+    .btn:hover {background:#0097a7;}
+
+    /* Sections */
+    section {padding:6rem 2rem; max-width:1100px; margin:auto; text-align:center;}
+    h2 {font-size:2rem; margin-bottom:1.5rem;}
+
+    /* Skills */
+    .skills-grid {
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(120px,1fr));
+      gap:1rem;
+    }
+    .skill-card {
+      background:#f4f4f4; padding:1rem; border-radius:8px;
+      transition:0.3s; font-weight:500;
+    }
+    .skill-card:hover {background:#00bcd4; color:#fff; transform:translateY(-5px);}
+
+    /* Projects */
+    .project-list {
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+      gap:1.5rem;
+    }
+    .project-card {
+      background:#fff; border-radius:8px; padding:1.5rem;
+      box-shadow:0 3px 6px rgba(0,0,0,0.1); transition:0.3s;
+    }
+    .project-card:hover {transform:translateY(-5px);}
+    .project-card a {display:inline-block; margin-top:1rem; color:#00bcd4; text-decoration:none;}
+
+    /* Contact */
+    form {display:flex; flex-direction:column; gap:1rem; max-width:600px; margin:auto;}
+    input, textarea {
+      padding:0.8rem; border:1px solid #ddd; border-radius:5px;
+      font-family:inherit;
+    }
+    button {
+      background:#00bcd4; color:#fff; border:none; padding:0.8rem;
+      border-radius:5px; cursor:pointer; transition:0.3s;
+    }
+    button:hover {background:#0097a7;}
+
+    /* Footer */
+    footer {background:#111; color:#fff; text-align:center; padding:1rem;}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">EXYZENN</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Hello, I'm <span>Exyzenn</span></h1>
+    <p> 💹 Forex & Crypto Trader | 🎯 Airdrop Hunter | 🌐 Web3 Explorer
+
+Turning volatility into opportunity while embracing the future of decentralized finance.</p>
+    <a href="#projects" class="btn">See My Work</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a developer with high enthusiasm, not only as a Web3 enthusiast but also an analyst in the field of forex and crypto trading, I am also an Airdrop hunter who stands to build an ecosystem on the Web3 project
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">NODE VALIDATOR</div>
+      <div class="skill-card">TESNET Q&A</div>
+      <div class="skill-card">EA MQL5</div>
+      <div class="skill-card">DEV OPS & TOOLS</div>
+      <div class="skill-card">SECURITY</div>
+      <div class="skill-card">MARKET ANALYSIS</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio built with passion in building an ecosystem</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Activities </h3>
+        <p>historical activity data from successful projects</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>The technology used</h3>
+        <p>historical data on technology used to build the ecosystem </p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Exyzenn | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+      anchor.addEventListener("click",function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+          .scrollIntoView({behavior:"smooth"});
+      });
+    });
+    // Dummy form
+    document.querySelector("form").addEventListener("submit",e=>{
+      e.preventDefault();
+      alert("Message sent! (Demo only)");
+      e.target.reset();
+    });
+  </script>
+</body>
+        </html>
