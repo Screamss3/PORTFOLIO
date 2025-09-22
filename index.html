@@ -1,0 +1,201 @@
+<!--
+Converted from user's screenshot: Personal Portfolio HTML
+Sections: Header (name, roles, badges, social links), Summary (Ringkasan), Skills (Keahlian), Selected Projects (Project Pilihan), Activities (Aktivitas), Technologies (Teknologi), Contact.
+Edit placeholder texts, links, and images to match your real data.
+--><!doctype html>
+
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exyzenn — Portfolio</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#ffffff; --muted:#64748b; --accent:#2563eb;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071126 0%, #071428 100%);color:#0b1220}
+    .container{max-width:900px;margin:28px auto;padding:20px}
+    .card{background:var(--card);border-radius:18px;padding:22px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    .row{display:flex;gap:18px;align-items:flex-start}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,#7c3aed,#06b6d4);display:flex;align-items:center;justify-content:center;color:#051225;font-weight:700;font-size:22px}
+    h1{margin:0;font-size:20px}
+    .subtitle{color:var(--muted);font-size:13px;margin-top:6px}
+    .badges{display:flex;gap:8px;margin-top:10px}
+    .badge{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:12px;color:#334155}
+    .icons{display:flex;gap:12px;margin-top:12px}
+    .icon{width:38px;height:38px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;background:#f8fafc}/* summary/section styles */
+.section{margin-top:18px}
+.section h3{margin:0 0 10px 0;font-size:16px}
+.summary{background:#f8fafc;padding:14px;border-radius:12px;color:#0b1220}
+ul.clean{padding-left:18px;margin:0}
+.skill-list{display:grid;grid-template-columns:repeat(1,1fr);gap:10px}
+.skill-card{background:#fbfcfd;border-radius:12px;padding:12px;border:1px solid #eef2ff}
+
+/* projects */
+.project{background:#fff;padding:12px;border-radius:12px;border:1px solid #eef2ff;margin-bottom:10px}
+.project .meta{font-size:12px;color:var(--muted);margin-top:6px}
+
+/* timeline */
+.timeline{display:flex;flex-direction:column;gap:10px}
+.timeline-item{background:#fff;padding:12px;border-radius:12px;border:1px solid #eef2ff}
+
+/* tech tags */
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{background:#f1f5f9;padding:8px 10px;border-radius:999px;font-size:13px;border:1px solid #e6eefc}
+
+/* contact */
+.contact{display:flex;flex-direction:column;gap:12px}
+.contact .links{display:flex;gap:12px}
+.contact a{display:inline-flex;align-items:center;gap:10px;padding:8px 10px;border-radius:12px;background:#ffffff;border:1px solid #eef2ff;text-decoration:none;color:#0b1220}
+.contact img.icon{width:28px;height:28px;border-radius:8px}
+
+/* responsive */
+@media(min-width:720px){.skill-list{grid-template-columns:repeat(2,1fr)}.row{align-items:center}}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <!-- Header -->
+      <div class="row">
+        <div class="avatar">HB</div>
+        <div style="flex:1">
+          <h1>Exyzenn</h1>
+          <div class="subtitle">Blockchain Enthusiast | Node Operator | Airdrop Hunter | Crypto Market Analyst</div><div class="badges">
+        <div class="badge">🇮🇩 Indonesia</div>
+        <div class="badge">Available for collaborations</div>
+      </div>
+
+      <div class="icons">
+        <!-- replace href with your links -->
+        <a class="icon" href="#" title="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" style="width:20px;height:20px"></a>
+        <a class="icon" href="#" title="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin" style="width:20px;height:20px"></a>
+        <a class="icon" href="#" title="Telegram"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="telegram" style="width:20px;height:20px"></a>
+        <a class="icon" href="#" title="Email"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="email" style="width:20px;height:20px"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ringkasan -->
+  <div class="section">
+    <h3>Ringkasan</h3>
+    <div class="summary">
+      managing nodes/validators (multi-accounts), active in various testnets and retrodrops/airdrops. Focus on infrastructure, node security, uptime, and DevOps automation.
+    </div>
+  </div>
+
+  <!-- Keahlian -->
+  <div class="section">
+    <h3>Skill</h3>
+    <div class="skill-list">
+      <div class="skill-card">
+        <strong>Node & Validator</strong>
+        <ul class="clean"><li>Cosmos SDK (gaia, gald), dApp</li><li>EVM/L2 (OP Stack, Linea)</li><li>Staking, multiple‑account validator mgmt</li></ul>
+      </div>
+
+      <div class="skill-card">
+        <strong>Testnet & QA</strong>
+        <ul class="clean"><li>Set up & run testnets</li><li>Bridge & sinkronisasi</li><li>Bug reporting & monitoring</li></ul>
+      </div>
+
+      <div class="skill-card">
+        <strong>DevOps & Tools</strong>
+        <ul class="clean"><li>Docker / Linux</li><li>CI & infra scripting</li><li>VPS Management</li></ul>
+      </div>
+
+      <div class="skill-card">
+        <strong>Security</strong>
+        <ul class="clean"><li>Backup keys</li><li>Firewall dasar</li><li>Updates & patches</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Pilihan -->
+  <div class="section">
+    <h3>Selected projects</h3>
+    <div class="project">
+      <strong>Cysic — ASIC Miner Project Based on zk.EVM (2024–2025)</strong>
+      <div class="meta">ZK/EVM • GPU miner</div>
+      <p style="margin-top:8px">Developing GPU-based miner nodes, environment configuration, synchronization monitoring, and testing.</p>
+    </div>
+
+    <div class="project">
+      <strong>Linea Testnet — Retrodrop Participant (2023–2025)</strong>
+      <div class="meta">testnet • bridge • retro</div>
+      <p style="margin-top:8px">Active bridging, DeFi transactions, and dApp testing to earn LXP and potential retro/airdrops.</p>
+    </div>
+
+    <div class="project">
+      <strong>Initia Testnet (2024–2025)</strong>
+      <div class="meta">simple contract • node</div>
+      <p style="margin-top:8px">Deploy simple contracts and join quests/communities for retro rewards.</p>
+    </div>
+
+    <div class="project">
+      <strong>Puffer Finance (2024)</strong>
+      <div class="meta">staking • restaking</div>
+      <p style="margin-top:8px">Staking on restaking protocols & mechanical exploration to earn yield.</p>
+    </div>
+
+    <div class="project">
+      <strong>Cosmos Ecosystem — Node setup (2023–2025)</strong>
+      <div class="meta">Cosmos SDK • uptime</div>
+      <p style="margin-top:8px">Install, update, and maintain validator uptime on the Cosmos SDK network.</p>
+    </div>
+  </div>
+
+  <!-- Aktivitas -->
+  <div class="section">
+    <h3>Activities </h3>
+    <div class="timeline">
+      <div class="timeline-item"><strong>2025</strong><div class="meta">Maintain validator & mining ops; Focus on uptime and automation.</div></div>
+      <div class="timeline-item"><strong>2024</strong><div class="meta">Linea & Initia testnets/retro; bridge experiments / dev work.</div></div>
+      <div class="timeline-item"><strong>2023</strong><div class="meta">Multi chain node ops in Cosmos & EVM ecosystem.</div></div>
+    </div>
+  </div>
+
+  <!-- Teknologi -->
+  <div class="section">
+    <h3>Teknologi</h3>
+    <div class="tags">
+      <div class="tag">Cosmos SDK</div>
+      <div class="tag">Testnet</div>
+      <div class="tag">EVM</div>
+      <div class="tag">OP Stack</div>
+      <div class="tag">Docker</div>
+      <div class="tag">Prometheus</div>
+      <div class="tag">Grafana</div>
+    </div>
+  </div>
+
+  <!-- Kontak -->
+  <div class="section">
+    <h3>contact</h3>
+    <div class="contact">
+      <div style="display:flex;gap:12px;align-items:center">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="twitter" style="width:72px;height:72px;border-radius:12px;object-fit:cover">
+        <div>
+          <div style="font-weight:700">Exyzenn</div>
+          <div style="color:var(--muted);font-size:13px">Open for collaboration, node setup, and testnet research</div>
+          <div style="margin-top:8px;display:flex;gap:8px">
+            <a href="#" style="text-decoration:none;padding:8px 10px;background:#f8fafc;border-radius:10px;color:#0b1220;border:1px solid #eef2ff">GitHub</a>
+            <a href="#" style="text-decoration:none;padding:8px 10px;background:#f8fafc;border-radius:10px;color:#0b1220;border:1px solid #eef2ff">LinkedIn</a>
+            <a href="#" style="text-decoration:none;padding:8px 10px;background:#f8fafc;border-radius:10px;color:#0b1220;border:1px solid #eef2ff">Telegram</a>
+            <a href="mailto:you@domain.com" style="text-decoration:none;padding:8px 10px;background:#f8fafc;border-radius:10px;color:#0b1220;border:1px solid #eef2ff">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:18px;color:var(--muted);font-size:13px">© 2025 Hilmal Bintang Al azis</div>
+</div>
+
+  </div>
+</body>
+</html>
