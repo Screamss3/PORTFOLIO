@@ -1,248 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exyzenn | Digital Resume</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-
-    .header {
-      text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #3b82f6, #9333ea);
-      border-radius: 0 0 20px 20px;
-    }
-
-    .avatar {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
-
-    .info h2 {
-      margin: 5px 0;
-      font-size: 26px;
-    }
-
-    .info p {
-      margin: 5px 0;
-      font-size: 14px;
-      color: #f1f5f9;
-    }
-
-    .contacts {
-      margin-top: 15px;
-    }
-
-    .contacts a {
-      margin: 0 10px;
-      font-size: 22px;
-      color: #fff;
-      transition: transform 0.2s, color 0.2s;
-    }
-
-    .contacts a:hover {
-      transform: scale(1.2);
-      color: #fbbf24;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      background: #1e293b;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    }
-
-    section h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: #38bdf8;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 14px;
-      padding: 20px;
-      color: #94a3b8;
-    }
-
-    .tech-tags span {
-      background: #334155;
-      padding: 5px 10px;
-      border-radius: 8px;
-      margin: 4px;
-      display: inline-block;
-      font-size: 13px;
-    }
-  </style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-900 text-gray-100 font-[Poppins]">
+
   <!-- Header -->
-  <div class="header">
-    <img src="https://raw.githubusercontent.com/Screamss3/Portfolio/ecb88190bde187519181d843431355f24e6e20bd/AQOqz3MbdYLzEo9KMF12wR0eXsVWJM_V6UkFiUDKLRV-pt10lCeqSD8m6iFS4lh4-V0RwIxQZRy2OeF0QPAH0W5QxiqYucgK2jIvsX0cMDcJ2ALPoRfWsmTyTZKGvQtAGkY9vfXFD8mSfMNhyBMiecH4sedPrA.jpeg"
-         alt="Profile" class="avatar">
+  <header class="bg-gray-800 shadow-lg">
+    <div class="max-w-4xl mx-auto flex flex-col items-center py-10 px-4">
+      <!-- Foto Profil -->
+      <img src="https://raw.githubusercontent.com/Screamss3/Portfolio/main/AQOqz3MbdYLzEo9KMF12wR0eXsVWJM_V6UkFiUDKLRV-pt10lCeqSD8m6iFS4lh4-V0RwIxQZRy2OeF0QPAH0W5QxiqYucgK2jIvsX0cMDcJ2ALPoRfWsmTyTZKGvQtAGkY9vfXFD8mSfMNhyBMiecH4sedPrA.jpeg" 
+           alt="Profile" 
+           class="w-40 h-40 rounded-xl border-4 border-cyan-500 shadow-lg object-cover">
 
-    <div class="info">
-      <h2>Exyzenn</h2>
-      <p>Blockchain Enthusiast | Node Operator | Airdrop Hunter | Crypto Market Analyst</p>
-      <p>📍 Indonesia · Available for collaborations</p>
+      <!-- Info -->
+      <h1 class="mt-6 text-3xl font-bold">Exyzenn</h1>
+      <p class="text-lg text-gray-400">Blockchain Enthusiast | Node Operator | Airdrop Hunter | Crypto Market Analyst</p>
+      <p class="text-sm text-gray-500 mt-1">🇮🇩 Indonesia · Available for collaborations</p>
+
+      <!-- Ikon Kontak -->
+      <div class="flex space-x-6 mt-6">
+        <a href="mailto:yourmail@gmail.com" target="_blank" class="hover:scale-110 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" class="w-8 h-8" alt="Email">
+        </a>
+        <a href="https://github.com/Screamss3" target="_blank" class="hover:scale-110 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" class="w-8 h-8" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:scale-110 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="w-8 h-8" alt="LinkedIn">
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" class="hover:scale-110 transition">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" class="w-8 h-8" alt="Twitter">
+        </a>
+      </div>
     </div>
+  </header>
 
-    <div class="contacts">
-      <a href="https://www.linkedin.com/in/username" target="_blank" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/username" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://t.me/username" target="_blank" title="Telegram">
-        <i class="fab fa-telegram"></i>
-      </a>
-      <a href="mailto:emailkamu@gmail.com" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </div>
-  </div>
+  <main class="max-w-4xl mx-auto px-6 py-10 space-y-12">
 
-  <div class="container">
-    <!-- Ringkasan -->
+    <!-- Summary -->
     <section>
-      <h3>Summary</h3>
-      <p>Managing nodes/validators (multi-accounts), active in various testnets and retrodrops/airdrops. Focus on infrastructure, node security, uptime, and DevOps automation.</p>
+      <h2 class="text-2xl font-semibold text-cyan-400 border-b border-gray-700 pb-2 mb-4">Summary</h2>
+      <p class="text-base leading-relaxed">
+        Passionate blockchain enthusiast with hands-on experience in testnet participation, node operations, 
+        and QA validation. Actively involved in various blockchain communities, contributing to decentralization 
+        while staying ahead in the fast-evolving crypto space.
+      </p>
     </section>
 
-    <!-- Skill -->
+    <!-- Skills -->
     <section>
-      <h3>Skill</h3>
-      <div class="grid">
-        <div>
-          <strong>Node & Validator</strong>
-          <ul>
-            <li>Cosmos SDK (gaia, gald), dApp</li>
-            <li>EVM/L2 (OP Stack, Linea)</li>
-            <li>Staking, multiple-account validator mgmt</li>
+      <h2 class="text-2xl font-semibold text-cyan-400 border-b border-gray-700 pb-2 mb-6">Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-gray-800 p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Node & Validator</h3>
+          <ul class="space-y-1 text-sm">
+            <li>Blockchain Node Setup & Maintenance</li>
+            <li>Validator Operations</li>
+            <li>Monitoring & Debugging</li>
           </ul>
         </div>
-        <div>
-          <strong>Testnet & QA</strong>
-          <ul>
-            <li>Set up & run testnets</li>
-            <li>Bridge & sinkronisasi</li>
-            <li>Bug reporting & monitoring</li>
+        <div class="bg-gray-800 p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Testnet & QA</h3>
+          <ul class="space-y-1 text-sm">
+            <li>Testnet Participation</li>
+            <li>Bug Reporting</li>
+            <li>Quality Assurance</li>
           </ul>
         </div>
-        <div>
-          <strong>DevOps & Tools</strong>
-          <ul>
-            <li>Docker / Linux</li>
-            <li>CI & infra scripting</li>
-            <li>VPS Management</li>
+        <div class="bg-gray-800 p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Crypto Market Analysis</h3>
+          <ul class="space-y-1 text-sm">
+            <li>Technical Analysis</li>
+            <li>Airdrop Hunting</li>
+            <li>Market Research</li>
           </ul>
         </div>
-        <div>
-          <strong>Security</strong>
-          <ul>
-            <li>Backup keys</li>
-            <li>Firewall dasar</li>
-            <li>Updates & patches</li>
+        <div class="bg-gray-800 p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Tools</h3>
+          <ul class="space-y-1 text-sm">
+            <li>Linux / CLI</li>
+            <li>Docker</li>
+            <li>Git & GitHub</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Selected Projects -->
+    <!-- Projects -->
     <section>
-      <h3>Selected Projects</h3>
-      <ul>
-        <li><strong>Cysic — ASIC Miner Project Based on zk.EVM (2024–2025)</strong><br>
-          Developing GPU-based miner nodes, environment configuration, synchronization monitoring, and testing.
-        </li>
-        <li><strong>Linea Testnet — Retrodrop Participant (2023–2025)</strong><br>
-          Active bridging, DeFi transactions, and dApp testing to earn LXP and potential retro/airdrops.
-        </li>
-        <li><strong>Initia Testnet (2024–2025)</strong><br>
-          Deploy simple contracts and join quests/communities for retro rewards.
-        </li>
-        <li><strong>Puffer Finance (2024)</strong><br>
-          Staking on restaking protocols & mechanical exploration to earn yield.
-        </li>
-        <li><strong>Cosmos Ecosystem — Node setup (2023–2025)</strong><br>
-          Install, update, and maintain validator uptime on the Cosmos SDK network.
-        </li>
+      <h2 class="text-2xl font-semibold text-cyan-400 border-b border-gray-700 pb-2 mb-6">Selected Projects & Activities</h2>
+      <ul class="space-y-4">
+        <li><span class="font-semibold">Celestia Testnet</span> — Validator & Community Contributor (2023)</li>
+        <li><span class="font-semibold">Sei Network Testnet</span> — Active Node Operator & Tester (2023)</li>
+        <li><span class="font-semibold">Aptos Incentivized Testnet</span> — QA Validator & Bug Reporter (2022)</li>
+        <li><span class="font-semibold">Cosmos Ecosystem</span> — Various Validator & Testnet Roles (2022–2023)</li>
       </ul>
     </section>
 
-    <!-- Activities -->
+    <!-- Technologies -->
     <section>
-      <h3>Activities</h3>
-      <ul>
-        <li><strong>2025:</strong> Maintain validator & mining ops. Focus on uptime and automation.</li>
-        <li><strong>2024:</strong> Linea & Initia testnets/retro testing experiments & dev work.</li>
-        <li><strong>2023:</strong> Multi-chain node ops in Cosmos & EVM ecosystem.</li>
-      </ul>
-    </section>
-
-    <!-- Teknologi -->
-    <section>
-      <h3>Teknologi</h3>
-      <div class="tech-tags">
-        <span>Cosmos SDK</span>
-        <span>Docker</span>
-        <span>Linux</span>
-        <span>CI/CD</span>
-        <span>Testnet</span>
-        <span>EVM</span>
-        <span>Staking</span>
-        <span>Validator</span>
-        <span>Monitoring</span>
+      <h2 class="text-2xl font-semibold text-cyan-400 border-b border-gray-700 pb-2 mb-6">Technologies</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Linux</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Docker</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Git</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Cosmos SDK</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Rust</span>
+        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">TypeScript</span>
       </div>
     </section>
+  </main>
 
-    <!-- Contact -->
-    <section>
-      <h3>Contact</h3>
-      <p>You can connect via:</p>
-      <div class="contacts">
-        <a href="https://www.linkedin.com/in/username" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://t.me/username" target="_blank"><i class="fab fa-telegram"></i></a>
-        <a href="mailto:emailkamu@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-    </section>
-  </div>
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-800">
+    © 2025 Exyzenn. Built with ❤️ for the Blockchain community.
+  </footer>
 
-  <div class="footer">
-    © 2025 Exyzenn.
-  </div>
 </body>
 </html>
