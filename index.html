@@ -1,172 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exyzenn | Digital Resume</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exyzenn Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem;
+      color: #22d3ee;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 0.4rem;
+    }
+    h3 { color: #f8fafc; }
+    section {
+      margin-bottom: 2rem;
+    }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.5rem; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .skills-grid h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      color: #38bdf8;
+    }
+    .skills-grid ul {
+      list-style: disc;
+      padding-left: 1rem;
+    }
+    .highlight { color: #f8fafc; font-weight: 600; }
+  </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-[Poppins]">
+<body>
 
-  <!-- Header -->
-  <header class="bg-gray-800 shadow-lg">
-    <div class="max-w-4xl mx-auto flex flex-col items-center py-10 px-4">
-      <!-- Foto Profil -->
-      <img src="https://raw.githubusercontent.com/Screamss3/Portfolio/main/AQOqz3MbdYLzEo9KMF12wR0eXsVWJM_V6UkFiUDKLRV-pt10lCeqSD8m6iFS4lh4-V0RwIxQZRy2OeF0QPAH0W5QxiqYucgK2jIvsX0cMDcJ2ALPoRfWsmTyTZKGvQtAGkY9vfXFD8mSfMNhyBMiecH4sedPrA.jpeg" 
-           alt="Profile" 
-           class="w-40 h-40 rounded-xl border-4 border-cyan-500 shadow-lg object-cover">
+  <section id="summary">
+    <h2><i class="fas fa-user"></i> Summary</h2>
+    <p>
+      Passionate blockchain enthusiast with hands-on experience in testnet participation, node operations, 
+      and QA validation. Actively involved in various blockchain communities, contributing to decentralization 
+      while staying ahead in the fast-evolving crypto space.
+    </p>
+  </section>
 
-      <!-- Info -->
-      <h1 class="mt-6 text-3xl font-bold">Exyzenn</h1>
-      <p class="text-lg text-gray-400">Blockchain Enthusiast | Node Operator | Airdrop Hunter | Crypto Market Analyst</p>
-      <p class="text-sm text-gray-500 mt-1">🇮🇩 Indonesia · Available for collaborations</p>
-
-      <!-- Ikon Kontak -->
-      <div class="flex space-x-6 mt-6">
-        <a href="mailto:exyzennn@gmail.com" target="_blank" class="hover:scale-110 transition">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" class="w-8 h-8" alt="Email">
-        </a>
-        <a href="https://github.com/Screamss3" target="_blank" class="hover:scale-110 transition">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" class="w-8 h-8" alt="GitHub">
-        </a>
-        <a href="https://t.me/exyzenn" target="_blank" class="hover:scale-110 transition">
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" class="w-8 h-8" alt="Telegram"/>
-        </a>
-        <a href="https://twitter.com/Exyzennn" target="_blank" class="hover:scale-110 transition">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" class="w-8 h-8" alt="Twitter">
-        </a>
+  <section id="skills">
+    <h2><i class="fas fa-cogs"></i> Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h3>Node & Validator</h3>
+        <ul>
+          <li>Blockchain Node Setup & Maintenance</li>
+          <li>Validator Operations</li>
+          <li>Monitoring & Debugging</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Testnet & QA</h3>
+        <ul>
+          <li>Testnet Participation</li>
+          <li>Bug Reporting</li>
+          <li>Quality Assurance</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Crypto Market Analysis</h3>
+        <ul>
+          <li>Technical Analysis</li>
+          <li>Airdrop Hunting</li>
+          <li>Market Research</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <ul>
+          <li>Linux / CLI</li>
+          <li>Docker</li>
+          <li>Git & GitHub</li>
+        </ul>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main class="max-w-4xl mx-auto px-6 py-10 space-y-12">
+  <section id="technologies">
+    <h2><i class="fas fa-laptop-code"></i> Technologies</h2>
+    <p>Linux • Docker • Git • Cosmos SDK • Rust • TypeScript • Solidity • EVM • ZK Tech • Move</p>
+  </section>
 
-    <!-- Summary -->
-    <section>
-      <h2 class="text-2xl font-semibold text-cyan-400 border-b border-gray-700 pb-2 mb-4">Summary</h2>
-      <p class="text-base leading-relaxed">
-        Passionate blockchain enthusiast with hands-on experience in testnet participation, node operations, 
-        and QA validation. Actively involved in various blockchain communities, contributing to decentralization 
-        while staying ahead in the fast-evolving crypto space.
-      </p>
-    </section>
+  <section id="projects">
+    <h2><i class="fas fa-project-diagram"></i> Selected Projects & Activities</h2>
+    <ul>
+      <li><span class="highlight">Celestia Testnet</span> — Validator & Community Contributor (2023)</li>
+      <li><span class="highlight">Sei Network Testnet</span> — Active Node Operator & Tester (2023)</li>
+      <li><span class="highlight">Aptos Incentivized Testnet</span> — QA Validator & Bug Reporter (2022)</li>
+      <li><span class="highlight">Cosmos Ecosystem</span> — Various Validator & Testnet Roles (2022–2023)</li>
+      <li><span class="highlight">Arbitrum DAO Community</span> — Governance Participation & Contributor (2023–2024)</li>
+      <li><span class="highlight">Linea Testnet</span> — Validator & Bug Reporter (2023–Present)</li>
+      <li><span class="highlight">Taiko Testnet</span> — Validator & Community Tester (2024–Present)</li>
+      <li><span class="highlight">Initia Testnet</span> — Validator Tester (2024)</li>
+    </ul>
+  </section>
 
-    <!-- Skills -->
-    <section>
-      <h2 class="text-2xl font-semibold text-cyan-400 border-b border-gray-700 pb-2 mb-6">Skills</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div class="bg-gray-800 p-4 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Node & Validator</h3>
-          <ul class="space-y-1 text-sm">
-            <li>Blockchain Node Setup & Maintenance</li>
-            <li>Validator Operations</li>
-            <li>Monitoring & Debugging</li>
-          </ul>
-        </div>
-        <div class="bg-gray-800 p-4 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Testnet & QA</h3>
-          <ul class="space-y-1 text-sm">
-            <li>Testnet Participation</li>
-            <li>Bug Reporting</li>
-            <li>Quality Assurance</li>
-          </ul>
-        </div>
-        <div class="bg-gray-800 p-4 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Crypto Market Analysis</h3>
-          <ul class="space-y-1 text-sm">
-            <li>Technical Analysis</li>
-            <li>Airdrop Hunting</li>
-            <li>Market Research</li>
-          </ul>
-        </div>
-        <div class="bg-gray-800 p-4 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Tools</h3>
-          <ul class="space-y-1 text-sm">
-            <li>Linux / CLI</li>
-            <li>Docker</li>
-            <li>Git & GitHub</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <section id="certifications">
+    <h2><i class="fas fa-certificate"></i> Certifications</h2>
+    <ul>
+      <li>Blockchain Basics — Coursera (2023)</li>
+      <li>Ethereum Developer Bootcamp — Online Program (2024)</li>
+    </ul>
+  </section>
 
-   <!-- Selected Projects & Activities -->
-<div>
-  <h2 class="text-2xl font-semibold text-cyan-400 border-b border-gray-700 pb-2 mb-4">Selected Projects & Activities</h2>
-  <div class="space-y-4 text-gray-300 text-sm leading-relaxed">
+  <section id="community">
+    <h2><i class="fas fa-users"></i> Community & Contributions</h2>
+    <ul>
+      <li>Contributor in Cosmos Community (2022–2023)</li>
+      <li>Active participant in Arbitrum DAO (2023–2024)</li>
+      <li>Testnet participant for multiple L2 ecosystems (2023–2024)</li>
+    </ul>
+  </section>
 
-    <p>
-      <span class="font-semibold text-white">Celestia Testnet</span> — Validator & Community Contributor 
-      <span class="text-gray-400">(2023)</span><br>
-      Contributed to Celestia’s modular blockchain by testing validator roles and engaging with the community for feedback.
-    </p>
+  <section id="languages">
+    <h2><i class="fas fa-language"></i> Languages</h2>
+    <p>English — Professional • Bahasa Indonesia — Native</p>
+  </section>
 
-    <p>
-      <span class="font-semibold text-white">Sei Network Testnet</span> — Active Node Operator & Tester 
-      <span class="text-gray-400">(2023)</span><br>
-      Operated nodes and performed validator duties while actively reporting bugs and performance feedback.
-    </p>
-
-    <p>
-      <span class="font-semibold text-white">Aptos Incentivized Testnet</span> — QA Validator & Bug Reporter 
-      <span class="text-gray-400">(2022)</span><br>
-      Participated in validator setup, monitoring, and bug reporting during Aptos incentivized phases.
-    </p>
-
-    <p>
-      <span class="font-semibold text-white">Cosmos Ecosystem</span> — Various Validator & Testnet Roles 
-      <span class="text-gray-400">(2022 – 2023)</span><br>
-      Engaged in multiple Cosmos-based projects, focusing on validator deployment, monitoring, and debugging.
-    </p>
-
-    <p>
-      <span class="font-semibold text-white">Arbitrum</span> — Early Ecosystem Participant 
-      <span class="text-gray-400">(2022 – Present)</span><br>
-      Actively engaged in Arbitrum by exploring L2 solutions, bridging assets, and contributing to ecosystem testing.
-    </p>
-
-    <p>
-      <span class="font-semibold text-white">Linea</span> — Testnet Explorer & Contributor 
-      <span class="text-gray-400">(2023 – Present)</span><br>
-      Performed on-chain transactions, tested dApps, and contributed to Linea testnet feedback campaigns.
-    </p>
-
-    <p>
-      <span class="font-semibold text-white">Initia</span> — Validator Tester 
-      <span class="text-gray-400">(2024)</span><br>
-      Experimented with validator operations and contributed insights for Initia’s modular blockchain approach.
-    </p>
-
-    <p>
-      <span class="font-semibold text-white">Taiko</span> — Validator & Community Tester 
-      <span class="text-gray-400">(2024 – Present)</span><br>
-      Participated in Taiko testnet with validator setup, transaction testing, and protocol feedback.
-    </p>
-
-  </div>
-</div>
-
-    <!-- Technologies -->
-    <section>
-      <h2 class="text-2xl font-semibold text-cyan-400 border-b border-gray-700 pb-2 mb-6">Technologies</h2>
-      <div class="flex flex-wrap gap-3">
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Linux</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Docker</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Git</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Cosmos SDK</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Rust</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">TypeScript</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Solidity</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Web3.js</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">ZK Tech</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">Move</span>
-        <span class="bg-gray-800 px-4 py-2 rounded-full text-sm">EVM</span>
-      </div>
-    </section>
-  </main>
+  <section id="interests">
+    <h2><i class="fas fa-lightbulb"></i> Interests</h2>
+    <p>DeFi & DAO Governance • Layer-2 Scaling Solutions • Open-source Collaboration • Writing & Knowledge Sharing on Blockchain Adoption</p>
+  </section>
 
   <!-- Footer -->
   <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-800">
